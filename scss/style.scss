@@ -179,6 +179,11 @@ html {
       font-weight: 700;
     }
   }
+  .button {
+    @include large {
+      font-size: 0.72em;
+    }
+  }
 }
 
 /* button text sizing*/
@@ -194,6 +199,9 @@ html {
     &::after {
       font-size: 2em;
       padding: 0 0.15em;
+    }
+    @include large {
+      font-size: 1.1em;
     }
   }
 }
@@ -212,14 +220,29 @@ html {
   }
   .cta-step {
     width: 152px;
+    @include large {
+      width: 228px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     h3 {
+      margin-bottom: 0.2em;
       span {
         text-shadow: 1px 1px 1px #000, 0 0 16px #fed52f;
+      }
+    }
+    p {
+      @include large {
+        text-align: center;
       }
     }
   }
   .button {
     width: 152px;
+    @include large {
+      width: 228px;
+    }
   }
 }
 
@@ -250,7 +273,10 @@ html {
         height: 150px;
         border-radius: 10%;
         overflow: hidden;
-
+        @include large {
+          width: 248px;
+          height: 248px;
+        }
         a {
           width: 100%;
           height: 100%;
@@ -271,6 +297,9 @@ html {
           border-radius: inherit;
           top: 0;
           transform: translateX(-170px) skewX(-15deg);
+          @include large {
+            transform: translateX(-190px) skewX(-15deg);
+          }
         }
         &:before {
           width: 50%;
@@ -288,6 +317,10 @@ html {
         &:hover:after {
           transform: translateX(250px) skewX(-15deg);
           transition: 0.8s;
+          @include large {
+            transform: translateX(300px) skewX(-15deg);
+            transition: 0.6s;
+          }
         }
       }
     }
@@ -402,6 +435,9 @@ html {
 .payment-options {
   margin-bottom: 20px;
   gap: 4px;
+  @include large {
+    gap: 7px;
+  }
   .option {
     flex-basis: 38px;
     border-radius: 3px;

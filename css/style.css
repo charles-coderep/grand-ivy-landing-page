@@ -38,6 +38,8 @@ h4 {
   font-family: Lato, sans-serif;
 }
 
+/* leave out if not need to be specific*/
+/*show desktop layout from here*/
 /* font colours, backgrounds, sizes (mobile first) */
 ol {
   list-style: decimal;
@@ -134,6 +136,11 @@ h4 {
 
 h2 {
   font-size: 30px;
+}
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 42px;
+  }
 }
 
 h3 {
@@ -473,6 +480,11 @@ html {
   letter-spacing: -3px;
   font-weight: 700;
 }
+@media only screen and (min-width: 992px) {
+  .hero-title .button {
+    font-size: 0.72em;
+  }
+}
 
 /* button text sizing*/
 .button {
@@ -486,6 +498,11 @@ html {
 .button span::before, .button span::after {
   font-size: 2em;
   padding: 0 0.15em;
+}
+@media only screen and (min-width: 992px) {
+  .button span {
+    font-size: 1.1em;
+  }
 }
 
 /* cta strip */
@@ -505,11 +522,39 @@ html {
 .cta-strip .cta-step {
   width: 152px;
 }
+@media only screen and (min-width: 992px) {
+  .cta-strip .cta-step {
+    width: 228px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.cta-strip .cta-step h3 {
+  margin-bottom: 0.2em;
+}
 .cta-strip .cta-step h3 span {
   text-shadow: 1px 1px 1px #000, 0 0 16px #fed52f;
 }
+@media only screen and (min-width: 992px) {
+  .cta-strip .cta-step p {
+    text-align: center;
+  }
+}
 .cta-strip .button {
   width: 152px;
+}
+@media only screen and (min-width: 992px) {
+  .cta-strip .button {
+    width: 228px;
+  }
 }
 
 /* slot games */
@@ -540,6 +585,12 @@ html {
   border-radius: 10%;
   overflow: hidden;
 }
+@media only screen and (min-width: 992px) {
+  .slot-games .popular-slot-games .slot-games-links .slot-game {
+    width: 248px;
+    height: 248px;
+  }
+}
 .slot-games .popular-slot-games .slot-games-links .slot-game a {
   width: 100%;
   height: 100%;
@@ -561,6 +612,12 @@ html {
   -webkit-transform: translateX(-170px) skewX(-15deg);
           transform: translateX(-170px) skewX(-15deg);
 }
+@media only screen and (min-width: 992px) {
+  .slot-games .popular-slot-games .slot-games-links .slot-game:before, .slot-games .popular-slot-games .slot-games-links .slot-game:after {
+    -webkit-transform: translateX(-190px) skewX(-15deg);
+            transform: translateX(-190px) skewX(-15deg);
+  }
+}
 .slot-games .popular-slot-games .slot-games-links .slot-game:before {
   width: 50%;
   height: 100%;
@@ -580,6 +637,14 @@ html {
           transform: translateX(250px) skewX(-15deg);
   -webkit-transition: 0.8s;
   transition: 0.8s;
+}
+@media only screen and (min-width: 992px) {
+  .slot-games .popular-slot-games .slot-games-links .slot-game:hover:before, .slot-games .popular-slot-games .slot-games-links .slot-game:hover:after {
+    -webkit-transform: translateX(300px) skewX(-15deg);
+            transform: translateX(300px) skewX(-15deg);
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
 }
 .slot-games .popular-slot-games .button {
   margin-bottom: 30px;
@@ -691,6 +756,11 @@ html {
 .payment-options {
   margin-bottom: 20px;
   gap: 4px;
+}
+@media only screen and (min-width: 992px) {
+  .payment-options {
+    gap: 7px;
+  }
 }
 .payment-options .option {
   -ms-flex-preferred-size: 38px;
