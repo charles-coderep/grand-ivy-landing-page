@@ -1,0 +1,159 @@
+/* font colours, backgrounds, sizes (mobile first) */
+
+$black: #000000;
+$grey: #232325;
+$white: #ffffff;
+$yellow: #fed52f;
+$orange: #efb428;
+$brown-orange: #9d8851;
+
+ol {
+  list-style: decimal;
+}
+
+/* icons */
+
+.building::before {
+  content: '\e921';
+}
+
+.money::before {
+  content: '\e909';
+}
+
+.crown::before {
+  content: '\e910';
+}
+
+.shield::before {
+  content: '\e900';
+}
+
+.phone::before {
+  content: '\e934';
+}
+
+/* bg colours */
+body {
+  background-color: $black;
+}
+
+.cta-strip {
+  background-color: $grey;
+}
+
+/* font colours */
+
+h1,
+h2,
+p,
+ul,
+ol,
+a,
+.google-play span,
+.footer-terms span {
+  color: $white;
+}
+
+.offer-deal-amount {
+  color: $yellow;
+}
+
+h3,
+h4 {
+  color: $orange;
+}
+
+.footer-terms span {
+  color: $brown-orange;
+}
+
+.button {
+  color: $black;
+}
+
+/* font sizes */
+.button:not(.hero-title .button) {
+  font-size: 18px;
+}
+
+.footer-terms li,
+.footer-terms span {
+  font-size: 8px;
+}
+
+.top-terms p,
+.info-links ul li {
+  font-size: 9px;
+}
+
+.footer-text p {
+  font-size: 10px;
+}
+
+.cta-step p,
+.about-section p,
+.google-play a,
+.google-play span {
+  font-size: 12px;
+}
+
+.slot-games-intro p {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+/*font weights*/
+
+.button {
+  span::before,
+  span::after {
+    font-weight: 100;
+  }
+}
+
+.button,
+.cta-step h3 span {
+  font-weight: 700;
+}
+
+/*line height */
+p,
+ul,
+ol {
+  line-height: 1.3;
+}
+
+/*font styling*/
+
+a:not(.top-terms a) {
+  text-decoration: none;
+}
+
+.info-links ul li,
+.footer-terms span {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+.slot-games-intro p,
+.footer-terms p {
+  text-align: center;
+}
+
+.orange-underline {
+  color: $orange;
+  text-decoration: underline;
+}

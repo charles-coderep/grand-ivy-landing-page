@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+@font-face {
+  font-family: AvenidaLetPlain;
+  src: url(../assets/font/AvenidaLetPlain.eot);
+  src: url(../assets/font/AvenidaLetPlain.eot?#iefix)
+      format('embedded-opentype'),
+    url(../assets/font/AvenidaLetPlain.ttf) format('truetype'),
+    url(../assets/font/AvenidaLetPlain.woff) format('woff'),
+    url(../assets/font/AvenidaLetPlain.svg#AvenidaLetPlain) format('svg');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: GrandIvy;
+  src: url(../assets/icon-font/GrandIvy.eot);
+  src: url(../assets/icon-font/GrandIvy.eot?#iefix) format('embedded-opentype'),
+    url(../assets/icon-font/GrandIvy.ttf) format('truetype'),
+    url(../assets/icon-font/GrandIvy.woff) format('woff'),
+    url(../assets/icon-font/GrandIvy.svg#GrandIvy) format('svg');
+}
+
+p,
+span,
+a,
+ol,
+li {
+  font-family: Montserrat, sans-serif;
+}
+
+.welcome-text,
+h1,
+h2,
+h3,
+h4 {
+  font-family: AvenidaLetPlain;
+}
+
+.button span::before,
+.button span::after,
+.icon::before {
+  font-family: GrandIvy;
+}
+
+.offer-deal-amount,
+.cta-step span {
+  font-family: Lato, sans-serif;
+}

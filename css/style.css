@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat");
+@font-face {
+  font-family: AvenidaLetPlain;
+  src: url(../assets/font/AvenidaLetPlain.eot);
+  src: url(../assets/font/AvenidaLetPlain.eot?#iefix) format("embedded-opentype"), url(../assets/font/AvenidaLetPlain.ttf) format("truetype"), url(../assets/font/AvenidaLetPlain.woff) format("woff"), url(../assets/font/AvenidaLetPlain.svg#AvenidaLetPlain) format("svg");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: GrandIvy;
+  src: url(../assets/icon-font/GrandIvy.eot);
+  src: url(../assets/icon-font/GrandIvy.eot?#iefix) format("embedded-opentype"), url(../assets/icon-font/GrandIvy.ttf) format("truetype"), url(../assets/icon-font/GrandIvy.woff) format("woff"), url(../assets/icon-font/GrandIvy.svg#GrandIvy) format("svg");
+}
+p,
+span,
+a,
+ol,
+li {
+  font-family: Montserrat, sans-serif;
+}
+
+.welcome-text,
+h1,
+h2,
+h3,
+h4 {
+  font-family: AvenidaLetPlain;
+}
+
+.button span::before,
+.button span::after,
+.icon::before {
+  font-family: GrandIvy;
+}
+
+.offer-deal-amount,
+.cta-step span {
+  font-family: Lato, sans-serif;
+}
+
+/* font colours, backgrounds, sizes (mobile first) */
+ol {
+  list-style: decimal;
+}
+
+/* icons */
+.building::before {
+  content: "\e921";
+}
+
+.money::before {
+  content: "\e909";
+}
+
+.crown::before {
+  content: "\e910";
+}
+
+.shield::before {
+  content: "\e900";
+}
+
+.phone::before {
+  content: "\e934";
+}
+
+/* bg colours */
+body {
+  background-color: #000000;
+}
+
+.cta-strip {
+  background-color: #232325;
+}
+
+/* font colours */
+h1,
+h2,
+p,
+ul,
+ol,
+a,
+.google-play span,
+.footer-terms span {
+  color: #ffffff;
+}
+
+.offer-deal-amount {
+  color: #fed52f;
+}
+
+h3,
+h4 {
+  color: #efb428;
+}
+
+.footer-terms span {
+  color: #9d8851;
+}
+
+.button {
+  color: #000000;
+}
+
+/* font sizes */
+.button:not(.hero-title .button) {
+  font-size: 18px;
+}
+
+.footer-terms li,
+.footer-terms span {
+  font-size: 8px;
+}
+
+.top-terms p,
+.info-links ul li {
+  font-size: 9px;
+}
+
+.footer-text p {
+  font-size: 10px;
+}
+
+.cta-step p,
+.about-section p,
+.google-play a,
+.google-play span {
+  font-size: 12px;
+}
+
+.slot-games-intro p {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+/*font weights*/
+.button span::before,
+.button span::after {
+  font-weight: 100;
+}
+
+.button,
+.cta-step h3 span {
+  font-weight: 700;
+}
+
+/*line height */
+p,
+ul,
+ol {
+  line-height: 1.3;
+}
+
+/*font styling*/
+a:not(.top-terms a) {
+  text-decoration: none;
+}
+
+.info-links ul li,
+.footer-terms span {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+.slot-games-intro p,
+.footer-terms p {
+  text-align: center;
+}
+
+.orange-underline {
+  color: #efb428;
+  text-decoration: underline;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.justify-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.align-left {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-left {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* leave out if not need to be specific*/
+/*show desktop layout from here*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .hero {
+    height: auto;
+  }
+}
+.hero .hero-image {
+  background-image: url("../assets/images/haloa-bonus-100s-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: calc(100% - 160px);
+  /* change this dep on mobile device */
+}
+@media only screen and (min-width: 577px) {
+  .hero .hero-image {
+    height: calc(100% - 80px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero .hero-image {
+    height: calc(100% - 70px);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero .hero-image {
+    background-image: url("../assets/images/haloa-bonus-100s.jpg");
+    height: 650px;
+  }
+}
+.hero .hero-image .hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.hero .hero-image .hero-title .button {
+  background-color: #efb428;
+  border: 2px solid #efb428;
+}
+@media only screen and (min-width: 992px) {
+  .hero .hero-image .hero-title {
+    width: 50%;
+  }
+}
+.hero .hero-image .banner-wrapper {
+  max-width: 1200px;
+  /* desktop screen size used to offset welcome text*/
+  height: 100%;
+  margin: 0 auto;
+}
+.hero .top-terms {
+  position: absolute;
+  height: 160px;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  max-width: 992px;
+  /* 100% of device width till it gets to entry desktop*/
+  margin: 0 auto;
+}
+.hero .top-terms p {
+  text-align: center;
+}
+@media only screen and (min-width: 577px) {
+  .hero .top-terms {
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero .top-terms {
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero .top-terms {
+    position: relative;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    padding: 10px;
+  }
+}
+.hero .header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.hero .header-image {
+  position: relative;
+  background-image: url(../assets/images/grandivy-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 95px;
+  height: 100%;
+  background-position: center;
+}
+.hero .hide {
+  opacity: 0;
+}
+
+.button {
+  background-color: #fed52f;
+  border: 2px solid #fed52f;
+  text-transform: uppercase;
+  border-radius: 75px;
+  display: inline-block;
+}
+.button span {
+  border: 1px solid #000000;
+  border-radius: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.button span::before {
+  content: "\e90f";
+}
+.button span::after {
+  content: "\e90f";
+}
+
+/*hero text sizing*/
+@media only screen and (max-width: 576px) {
+  .hero-title {
+    font-size: 6.6vw;
+  }
+}
+@media only screen and (min-width: 577px) {
+  .hero-title {
+    font-size: 4.7vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-title {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero-title {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .hero-title {
+    font-size: 2vw;
+  }
+}
+.hero-title h1 {
+  font-size: inherit;
+}
+.hero-title h1 .welcome-text {
+  font-size: 1.06em;
+}
+.hero-title h1 .offer-deal-text {
+  font-size: 0.5em;
+  display: block;
+  margin: 0.3em 0em;
+}
+.hero-title h1 .offer-deal-text:last-of-type {
+  line-height: 1.2em;
+  text-transform: capitalize;
+}
+.hero-title h1 .offer-deal-amount {
+  text-shadow: 1px 1px 1px #000, 0 0 16px #fed52f;
+  font-size: 2.3em;
+  display: block;
+  letter-spacing: -3px;
+  font-weight: 700;
+}
+
+/* button text sizing*/
+.button {
+  margin-top: 0.15em;
+  line-height: 0em;
+}
+.button span {
+  padding: 0.85em 0.25em;
+  font-size: 0.72em;
+}
+.button span::before, .button span::after {
+  font-size: 2em;
+  padding: 0 0.15em;
+}
+
+/* cta strip */
+.wrapper {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-strip {
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.cta-strip .wrapper {
+  gap: 20px;
+}
+.cta-strip .cta-step {
+  width: 152px;
+}
+.cta-strip .cta-step h3 span {
+  text-shadow: 1px 1px 1px #000, 0 0 16px #fed52f;
+}
+.cta-strip .button {
+  width: 152px;
+}
+
+/* slot games */
+.slot-games {
+  margin-top: 20px;
+}
+.slot-games .slot-games-intro h2 {
+  margin-bottom: 0.2em;
+}
+.slot-games .popular-slot-games h2 {
+  margin: 1em 0;
+}
+.slot-games .popular-slot-games .slot-games-links {
+  margin-bottom: 20px;
+  gap: 15px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .slot-games .popular-slot-games .slot-games-links {
+    gap: 30px;
+  }
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game {
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: inherit;
+  border: 2px solid #fed52f;
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game a img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game:before, .slot-games .popular-slot-games .slot-games-links .slot-game:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  -webkit-transform: translateX(-170px) skewX(-15deg);
+          transform: translateX(-170px) skewX(-15deg);
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game:before {
+  width: 50%;
+  height: 100%;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  background: rgba(254, 213, 47, 0.7);
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game:after {
+  width: 23%;
+  height: 100%;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  background: rgba(239, 180, 40, 0.2);
+}
+.slot-games .popular-slot-games .slot-games-links .slot-game:hover:before, .slot-games .popular-slot-games .slot-games-links .slot-game:hover:after {
+  -webkit-transform: translateX(250px) skewX(-15deg);
+          transform: translateX(250px) skewX(-15deg);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.slot-games .popular-slot-games .button {
+  margin-bottom: 30px;
+}
+
+/* info links */
+.info-links {
+  padding: 1em 0;
+  border-top: 1px solid #fed52f;
+  margin-bottom: 10px;
+}
+.info-links ul li {
+  margin-right: 0.8em;
+}
+.info-links ul li::after {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 0.8em;
+  display: inline-block;
+  position: relative;
+  bottom: 0.2em;
+}
+.info-links ul li:last-of-type:after {
+  display: none;
+}
+
+/* about */
+.about {
+  border-bottom: 1px solid #fed52f;
+  padding-bottom: 30px;
+}
+.about .about-section {
+  margin-bottom: 25px;
+}
+.about .about-section h4 {
+  margin-bottom: 1em;
+}
+.about .about-section .icon::before {
+  margin-right: 0.7em;
+}
+.about .about-section p {
+  margin-bottom: 1em;
+}
+.about .google-play .image-link {
+  height: 24px;
+  width: 80px;
+  display: inline-block;
+  margin-left: 0.6em;
+}
+.about .google-play .image-link img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* footer */
+.footer .wrapper {
+  padding: 30px 0;
+}
+@media only screen and (min-width: 992px) {
+  .footer .wrapper {
+    max-width: 750px;
+  }
+}
+.footer .wrapper h2 {
+  margin-bottom: 0.25em;
+}
+.footer .wrapper .footer-terms {
+  position: relative;
+  margin: 20px 0;
+  width: calc(100% - 10px);
+}
+.footer .wrapper .footer-terms .footer-terms-content {
+  height: 170px;
+  border: 1px solid #9d8851;
+  border-radius: 10px;
+  padding: 10px;
+  scroll-margin-top: 140px;
+}
+@media only screen and (min-width: 992px) {
+  .footer .wrapper .footer-terms .footer-terms-content {
+    height: auto;
+  }
+}
+.footer .wrapper .footer-terms .footer-terms-content .container {
+  height: 100%;
+  overflow-y: auto;
+}
+@media only screen and (min-width: 992px) {
+  .footer .wrapper .footer-terms .footer-terms-content .container {
+    overflow-y: inherit;
+  }
+}
+.footer .wrapper .footer-terms .footer-terms-content ol {
+  margin-left: 15px;
+}
+.footer .wrapper .footer-terms span {
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0 10px;
+}
+
+/* payment options */
+.payment-options {
+  margin-bottom: 20px;
+  gap: 4px;
+}
+.payment-options .option {
+  -ms-flex-preferred-size: 38px;
+      flex-basis: 38px;
+  border-radius: 3px;
+}
+.payment-options .option a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.payment-options .option a img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* gamble help*/
+.gamble-help {
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.gamble-help a {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+}
+.gamble-help a img {
+  height: 100%;
+  width: auto;
+}
+
+/* footer text */
+.footer-text {
+  gap: 10px;
+}
+.footer-text .footer-text-brand {
+  gap: 10px;
+}
+.footer-text .footer-text-brand .footer-text-brand-image {
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+}
+.footer-text .footer-text-brand .footer-text-brand-image a {
+  width: 100%;
+}
+.footer-text .footer-text-brand .footer-text-brand-image a img {
+  width: 100%;
+}
+.footer-text .footer-text-brand p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /*fill remaining space*/
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}

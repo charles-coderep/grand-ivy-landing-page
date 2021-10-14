@@ -1,0 +1,49 @@
+$small: 576px; /* leave out if not need to be specific*/
+$small-medium: 577px;
+$medium: 768px;
+$large: 992px; /*show desktop layout from here*/
+$x-large: 1200px;
+$xx-large: 1400px;
+$xxx-large: 1800px;
+
+@mixin small {
+  @media only screen and (max-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin small-medium {
+  @media only screen and (min-width: #{$small-medium}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media only screen and (min-width: #{$x-large}) {
+    @content;
+  }
+}
+
+@mixin xx-large {
+  @media only screen and (min-width: #{$xx-large}) {
+    @content;
+  }
+}
+
+@mixin xxx-large {
+  @media only screen and (min-width: #{$xxx-large}) {
+    @content;
+  }
+}
