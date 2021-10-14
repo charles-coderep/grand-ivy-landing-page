@@ -652,7 +652,7 @@ html {
 .footer .wrapper .footer-terms {
   position: relative;
   margin: 20px 0;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
 }
 .footer .wrapper .footer-terms .footer-terms-content {
   height: 170px;
