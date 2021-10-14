@@ -615,44 +615,31 @@ html {
   content: "";
   display: block;
   position: absolute;
-  border-radius: inherit;
-  top: 0;
-  -webkit-transform: translateX(-170px) skewX(-15deg);
-          transform: translateX(-170px) skewX(-15deg);
-}
-@media only screen and (min-width: 992px) {
-  .slot-games .popular-slot-games .slot-games-links .slot-game:before, .slot-games .popular-slot-games .slot-games-links .slot-game:after {
-    -webkit-transform: translateX(-190px) skewX(-15deg);
-            transform: translateX(-190px) skewX(-15deg);
-  }
+  top: -87px;
+  -webkit-transform: translateX(-120px) skewX(15deg) rotate(0deg);
+          transform: translateX(-120px) skewX(15deg) rotate(0deg);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
 }
 .slot-games .popular-slot-games .slot-games-links .slot-game:before {
   width: 50%;
-  height: 100%;
+  height: 200%;
   -webkit-filter: blur(30px);
           filter: blur(30px);
   background: rgba(254, 213, 47, 0.7);
 }
 .slot-games .popular-slot-games .slot-games-links .slot-game:after {
   width: 23%;
-  height: 100%;
-  -webkit-filter: blur(6px);
-          filter: blur(6px);
-  background: rgba(239, 180, 40, 0.2);
+  height: 200%;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  background: rgba(239, 180, 40, 0.1);
 }
 .slot-games .popular-slot-games .slot-games-links .slot-game:hover:before, .slot-games .popular-slot-games .slot-games-links .slot-game:hover:after {
-  -webkit-transform: translateX(250px) skewX(-15deg);
-          transform: translateX(250px) skewX(-15deg);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-@media only screen and (min-width: 992px) {
-  .slot-games .popular-slot-games .slot-games-links .slot-game:hover:before, .slot-games .popular-slot-games .slot-games-links .slot-game:hover:after {
-    -webkit-transform: translateX(300px) skewX(-15deg);
-            transform: translateX(300px) skewX(-15deg);
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-  }
+  -webkit-transform: translateX(-190px) rotate(140deg) skewX(15deg);
+          transform: translateX(-190px) rotate(140deg) skewX(15deg);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .slot-games .popular-slot-games .button {
   margin-bottom: 30px;
