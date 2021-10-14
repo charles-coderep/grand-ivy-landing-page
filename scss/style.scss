@@ -254,10 +254,18 @@ html {
     h2 {
       margin-bottom: 0.2em;
     }
+    p {
+      margin-bottom: 0.5em;
+    }
+    .line {
+      width: 250px;
+      height: 1px;
+      background-color: white;
+    }
   }
   .popular-slot-games {
     h2 {
-      margin: 1em 0;
+      margin: 1.1em 0;
     }
     .slot-games-links {
       margin-bottom: 20px;

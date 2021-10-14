@@ -564,8 +564,16 @@ html {
 .slot-games .slot-games-intro h2 {
   margin-bottom: 0.2em;
 }
+.slot-games .slot-games-intro p {
+  margin-bottom: 0.5em;
+}
+.slot-games .slot-games-intro .line {
+  width: 250px;
+  height: 1px;
+  background-color: white;
+}
 .slot-games .popular-slot-games h2 {
-  margin: 1em 0;
+  margin: 1.1em 0;
 }
 .slot-games .popular-slot-games .slot-games-links {
   margin-bottom: 20px;
