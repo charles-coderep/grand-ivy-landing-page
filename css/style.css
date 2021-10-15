@@ -423,30 +423,8 @@ html {
 }
 
 /*hero text sizing*/
-@media only screen and (max-width: 576px) {
-  .hero-title {
-    font-size: 6.6vw;
-  }
-}
-@media only screen and (min-width: 577px) {
-  .hero-title {
-    font-size: 4.7vw;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hero-title {
-    font-size: 4vw;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero-title {
-    font-size: 3.5vw;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .hero-title {
-    font-size: 47px;
-  }
+.hero-title {
+  font-size: clamp(22px, 3.8vw, 37.9px);
 }
 .hero-title h1 {
   font-size: inherit;
