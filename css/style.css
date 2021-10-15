@@ -329,6 +329,11 @@ html {
   border: 2px solid #efb428;
 }
 @media only screen and (min-width: 992px) {
+  .hero .hero-image .hero-title .button span {
+    font-size: 0.72em;
+  }
+}
+@media only screen and (min-width: 992px) {
   .hero .hero-image .hero-title {
     width: 50%;
   }
@@ -424,7 +429,7 @@ html {
 
 /*hero text sizing*/
 .hero-title {
-  font-size: clamp(22px, 3.8vw, 37.9px);
+  font-size: clamp(22px, 4.7vw, 40.9px);
 }
 .hero-title h1 {
   font-size: inherit;
@@ -448,11 +453,6 @@ html {
   letter-spacing: -3px;
   font-weight: 700;
 }
-@media only screen and (min-width: 992px) {
-  .hero-title .button {
-    font-size: 0.72em;
-  }
-}
 
 /* button text sizing*/
 .button {
@@ -463,14 +463,14 @@ html {
   padding: 0.85em 0.25em;
   font-size: 0.72em;
 }
-.button span::before, .button span::after {
-  font-size: 2em;
-  padding: 0 0.15em;
-}
 @media only screen and (min-width: 992px) {
   .button span {
     font-size: 1.1em;
   }
+}
+.button span::before, .button span::after {
+  font-size: 2em;
+  padding: 0 0.15em;
 }
 
 /* cta strip */
@@ -492,7 +492,8 @@ html {
 }
 @media only screen and (min-width: 992px) {
   .cta-strip .cta-step {
-    width: 228px;
+    -ms-flex-preferred-size: 228px;
+        flex-basis: 228px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -521,7 +522,8 @@ html {
 }
 @media only screen and (min-width: 992px) {
   .cta-strip .button {
-    width: 228px;
+    -ms-flex-preferred-size: 228px;
+        flex-basis: 228px;
   }
 }
 
@@ -679,7 +681,7 @@ html {
 }
 .footer .wrapper .footer-terms {
   position: relative;
-  margin: 20px 0;
+  margin: 25px 0;
   width: calc(100% - 20px);
 }
 .footer .wrapper .footer-terms .footer-terms-content {
