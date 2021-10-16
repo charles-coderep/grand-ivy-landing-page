@@ -37,6 +37,9 @@ html {
     }
     @include large {
       background-image: url('../assets/images/haloa-bonus-100s.jpg');
+      height: 500px;
+    }
+    @include x-large {
       height: 650px;
     }
     .hero-title {
